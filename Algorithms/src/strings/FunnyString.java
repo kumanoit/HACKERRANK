@@ -1,4 +1,4 @@
-package strings.FunnyString;
+package strings;
 //https://www.hackerrank.com/challenges/funny-string
 import java.util.Scanner;
 

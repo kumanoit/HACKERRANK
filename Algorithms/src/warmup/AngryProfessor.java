@@ -1,4 +1,4 @@
-package warmup.angryProfessor;
+package warmup;
 //https://www.hackerrank.com/challenges/angry-professor
 import java.util.Scanner;
 

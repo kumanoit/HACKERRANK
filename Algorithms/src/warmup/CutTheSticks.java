@@ -1,4 +1,4 @@
-package warmup.cutTheSticks;
+package warmup;
 //https://www.hackerrank.com/challenges/cut-the-sticks
 import java.util.Iterator;
 import java.util.Scanner;

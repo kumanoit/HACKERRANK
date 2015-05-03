@@ -1,4 +1,4 @@
-package warmup.eulersCriterion;
+package numberTheory;
 //https://www.hackerrank.com/challenges/eulers-criterion
 import java.util.Scanner;
 

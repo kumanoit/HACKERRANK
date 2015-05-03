@@ -1,4 +1,4 @@
-package warmup.findDigits;
+package warmup;
 //https://www.hackerrank.com/challenges/find-digits
 import java.math.BigInteger;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package warmup.chocolateFeast;
+package warmup;
 //https://www.hackerrank.com/challenges/chocolate-feast
 import java.util.Scanner;
 

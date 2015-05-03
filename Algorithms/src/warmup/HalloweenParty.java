@@ -1,4 +1,4 @@
-package warmup.halloweenParty;
+package warmup;
 //https://www.hackerrank.com/challenges/halloween-party
 import java.math.BigInteger;
 import java.util.Scanner;
