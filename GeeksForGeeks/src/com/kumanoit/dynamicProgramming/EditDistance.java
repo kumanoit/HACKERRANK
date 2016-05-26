@@ -18,12 +18,31 @@ package com.kumanoit.dynamicProgramming;
 public class EditDistance {
 
 	public static void main(String[] args) {
-		String str1 = "";
-		String str2 = "sunday";
+		String str1 = "mondray";
+		String str2 = "sundoay";
 		System.out.println(getMinEdits(str1, str2, 0, 0));
 		System.out.println(getMinEditsDP(str1, str2));
+		System.out.println(getMinEditsTopDown(str1, str2, str1.length(), str2.length()));
 	}
 
+	private static int getMinEditsTopDown(String str1, String str2, int m, int n) {
+		if (m == 0) {
+			return n;
+		}
+		if (n == 0) {
+			return m;
+		}
+		if (str1.charAt(m - 1) == str2.charAt(n - 1)) {
+			return getMinEditsTopDown(str1, str2, m - 1, n - 1);
+		}
+		return 1 + Math.min(
+						Math.min(
+							getMinEditsTopDown(str1, str2, m - 1, n),
+							getMinEditsTopDown(str1, str2, m, n -1)
+						),
+						getMinEditsTopDown(str1, str2, m - 1, n - 1)		
+					);
+	}
 	private static int getMinEdits(String str1, String str2, int i, int j) {
 		if (i == str1.length()) {
 			return str2.length() - j;
